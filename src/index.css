@@ -1,8 +1,5 @@
 html, 
-body {
+body,
+#root {
     height: 100%;
-}
-
-.bg-img {
-    background: url("./static/1.png");
 }

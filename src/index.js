@@ -3,71 +3,42 @@ import ReactDOM from 'react-dom'
 import 'create-react-class'
 import { Router, Route, IndexRedirect, IndexRoute, Link, hashHistory } from 'react-router'
 
+import './index.css'
 import './antd.css'
-import { Button } from 'antd'
 
-import ChessGame from './components/ChessGame'
+import Login from './components/Login'
+import Home from './components/Home'
+import ButtonView from './components/ButtonView'
+import IconView from './components/IconView'
+import LayoutView from './components/LayoutView'
+import CascaderView from './components/CascaderView'
 
-class App extends React.Component{
+class App extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
     render() {
         return (
             <div>
-                <p>anu&&react-router</p>
-                <ul>
-                    <li><Link to="/about" activeStyle={{color:'red'}}>About</Link></li>
-                    <li><Link to="/repos" activeStyle={{color:'red'}}>Repos</Link></li>
-                    <li><Link to="/game" activeStyle={{color:'red'}}>Game</Link></li>
-                </ul>
-                <div>
-                    {this.props.children}
-                </div>
+                { this.props.children }
             </div>
         )
     }
 }
 
-const Home = () => {
-    return (
-        <div>
-            <Button type="primary">Primary</Button>
-            <Button>Default</Button>
-            <Button type="ghost">Ghost</Button>
-            <Button type="dashed">Dashed</Button>
-        </div>
-    )
-}
-
-const Repos = () => {
-    return (
-        <div>
-            repos
-        </div>
-    )
-}
-
-const About = (props) => {
-    return (
-        <div>
-            about
-        </div>
-    )
-}
-
-const Game = () => {
-    return (
-        <div>
-            <ChessGame />
-        </div>
-    )
-}
-
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={App}>
-            <IndexRoute component={Home}/>
-            <Route path="repos" component={Repos} />
-            <Route path="about" component={About} />
-            <Route path="game" component={Game} />
+            <IndexRedirect to="/login" />
+            <Route path="login" component={Login} />
+            <Route path="home" component={Home} >
+                <IndexRedirect to="/home/button" />
+                <Route path="button" component={ButtonView} />
+                <Route path="icon" component={IconView} />
+                <Route path="layout" component={LayoutView} />
+                <Route path="cascader" component={CascaderView} />
+            </Route>
         </Route>
     </Router>, 
     document.getElementById("root")
