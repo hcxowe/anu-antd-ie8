@@ -52,10 +52,10 @@ class Home extends Component {
                             <Menu.Item key="/home/Icon">Icon 图标</Menu.Item>
                             <Menu.Item key="/home/layout">Layout 栅格</Menu.Item>
                             <Menu.Item key="/home/cascader">Cascader 级联选择</Menu.Item>
-                            <Menu.Item key="5">选项5</Menu.Item>
-                            <Menu.Item key="6">选项6</Menu.Item>
-                            <Menu.Item key="7">选项7</Menu.Item>
-                            <Menu.Item key="8">选项8</Menu.Item>
+                            <Menu.Item key="/home/check">Checkbox 多选框</Menu.Item>
+                            <Menu.Item key="/home/datepicker">DatePicker 日期选择框</Menu.Item>
+                            <Menu.Item key="/home/form">Form 表单</Menu.Item>
+                            <Menu.Item key="/home/input">Input 输入框</Menu.Item>
                             <Menu.Item key="9">选项9</Menu.Item>
                             <Menu.Item key="10">选项10</Menu.Item>
                             <Menu.Item key="11">选项11</Menu.Item>
