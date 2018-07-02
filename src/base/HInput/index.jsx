@@ -6,11 +6,6 @@ class HInput extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {
-            pos: 0,
-            value: this.props.defaultValue || ''
-        }
-
         this.onChange = this.onChange.bind(this)
     }
 
@@ -71,31 +66,14 @@ class HInput extends Component {
         }
     }
 
-    componentDidUpdate() {
-        console.log('update', this.state.pos)
-        this.setSelectPosition(this.input, this.state.pos)
-    }
-
-    componentDidMount() {
-        console.log('update', this.state.pos)
-        this.setSelectPosition(this.input, this.state.pos)
-    }
-
     onChange(e) {
-        this.setState({
-            value: e.target.value,
-            pos: this.getSelectPosition(e.target).position
-        })
-
-        console.log(this.getSelectPosition(e.target).position)
-
         this.props.onChange && this.props.onChange(e)
     } 
 
     render() {
         return (
             <span class="h-input-wrapper">
-                <input value={this.state.value} style={this.props.style} onChange={this.onChange} ref={(input) => this.input = input} class="h-input" />
+                <input class="h-input" style={this.props.style} defaultValue="" type="text" onChange={this.onChange} ref={(input) => this.input = input} />
             </span>
         )
     }
