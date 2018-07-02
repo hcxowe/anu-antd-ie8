@@ -16,6 +16,7 @@ import CheckBoxView from './components/CheckBoxView'
 import DatePickerView from './components/DatePickerView'
 import FormView from './components/FormView'
 import InputView from './components/InputView'
+import Views from './components/Views'
 
 class App extends React.Component {
     constructor(props) {
@@ -46,6 +47,7 @@ ReactDOM.render(
                 <Route path="datepicker" component={DatePickerView} />
                 <Route path="form" component={FormView} />
                 <Route path="input" component={InputView} />
+                <Route path="views" component={Views} />
             </Route>
         </Route>
     </Router>, 

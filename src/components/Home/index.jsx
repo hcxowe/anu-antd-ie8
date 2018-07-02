@@ -56,7 +56,7 @@ class Home extends Component {
                             <Menu.Item key="/home/datepicker">DatePicker 日期选择框</Menu.Item>
                             <Menu.Item key="/home/form">Form 表单</Menu.Item>
                             <Menu.Item key="/home/input">Input 输入框</Menu.Item>
-                            <Menu.Item key="9">选项9</Menu.Item>
+                            <Menu.Item key="/home/views">Views</Menu.Item>
                             <Menu.Item key="10">选项10</Menu.Item>
                             <Menu.Item key="11">选项11</Menu.Item>
                             <Menu.Item key="12">选项12</Menu.Item>
