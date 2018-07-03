@@ -17,6 +17,9 @@ import DatePickerView from './components/DatePickerView'
 import FormView from './components/FormView'
 import InputView from './components/InputView'
 import Views from './components/Views'
+import TableView from './components/TableView'
+import TreeView from './components/TreeView'
+import NavView from './components/NavView'
 
 class App extends React.Component {
     constructor(props) {
@@ -48,6 +51,9 @@ ReactDOM.render(
                 <Route path="form" component={FormView} />
                 <Route path="input" component={InputView} />
                 <Route path="views" component={Views} />
+                <Route path="table" component={TableView} />
+                <Route path="tree" component={TreeView} />
+                <Route path="nav" component={NavView} />
             </Route>
         </Route>
     </Router>, 

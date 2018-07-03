@@ -189,7 +189,7 @@ class InputView extends Component {
                     <Switch checkedChildren={<Icon type="check" />} unCheckedChildren={<Icon type="cross" />} />
                 </div>
                 <div>
-                    <TimePicker onChange={onTimeChange} />
+                    <TimePicker onChange={this.onTimeChange} />
                 </div>
                 <div>
                     <Transfer

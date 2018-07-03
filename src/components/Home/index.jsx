@@ -57,9 +57,9 @@ class Home extends Component {
                             <Menu.Item key="/home/form">Form 表单</Menu.Item>
                             <Menu.Item key="/home/input">Input 输入框</Menu.Item>
                             <Menu.Item key="/home/views">Views</Menu.Item>
-                            <Menu.Item key="10">选项10</Menu.Item>
-                            <Menu.Item key="11">选项11</Menu.Item>
-                            <Menu.Item key="12">选项12</Menu.Item>
+                            <Menu.Item key="/home/table">Table 表格</Menu.Item>
+                            <Menu.Item key="/home/tree">Tree 树形控件</Menu.Item>
+                            <Menu.Item key="/home/nav">Navigation 导航</Menu.Item>
                         </Menu>
                     </div>
                     <div class="home-main-center">
