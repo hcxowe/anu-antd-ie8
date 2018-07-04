@@ -6,8 +6,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const Es3ifyPlugin = require('es3ify-webpack-plugin')
 
-const extractCSS = new ExtractTextPlugin('css/one.css');
-const extractLESS = new ExtractTextPlugin('css/two.css');
+const extractCSS = new ExtractTextPlugin('css/one.css')
+const extractLESS = new ExtractTextPlugin('css/two.css')
 
 module.exports = {
     entry: {
